@@ -2,16 +2,16 @@ import os
 import sys
 currentPath = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(currentPath.replace("\manualreview", ""))
-from manualreview import rawscriptsmenu
+import rawscriptsmenu
 from PyQt5 import QtWidgets
-from manualreview import client
+import client
 import sys
 import atexit
 import datetime
 import configparser
-from manualreview import settings
+import settings
 from datetime import timedelta
-from manualreview import videoscriptcore
+import videoscriptcore
 currentPath = os.path.dirname(os.path.realpath(__file__))
 
 

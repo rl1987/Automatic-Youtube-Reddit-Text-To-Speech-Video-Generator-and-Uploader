@@ -6,14 +6,14 @@ from PyQt5 import QtCore
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5 import uic
-from manualreview import settings
+import settings
 import pickle
-from manualreview import publishmenu
-from manualreview import videoscriptcore
-from manualreview import client
+import publishmenu
+import videoscriptcore
+import client
 import cv2
 import ast
-from manualreview.VideoTypes import standardredditformat
+from VideoTypes import standardredditformat
 
 scriptsMenu = None
 

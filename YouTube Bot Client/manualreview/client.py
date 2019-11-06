@@ -4,12 +4,12 @@ from time import sleep
 import sys
 import pickle
 from threading import Thread
-from manualreview import rawscriptsmenu
+import rawscriptsmenu
 import hashlib
-from manualreview import videoscriptcore
+import videoscriptcore
 import datetime
-from manualreview import publishmenu
-from manualreview import settings
+import publishmenu
+import settings
 from PyQt5 import QtWidgets
 import configparser
 from PyQt5.QtCore import *

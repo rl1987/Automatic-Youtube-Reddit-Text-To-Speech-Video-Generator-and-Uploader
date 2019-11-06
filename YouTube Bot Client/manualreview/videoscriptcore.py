@@ -1,9 +1,9 @@
 
 import datetime
-from manualreview import settings
+import settings
 import os
 import pickle
-from manualreview import client
+import client
 
 video_scripts = []
 currentPath = os.path.dirname(os.path.realpath(__file__))

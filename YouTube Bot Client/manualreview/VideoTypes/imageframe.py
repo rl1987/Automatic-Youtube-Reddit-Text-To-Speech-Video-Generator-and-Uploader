@@ -1,6 +1,6 @@
 from moviepy.editor import *
 from PIL import ImageFont
-from manualreview import videosettings
+import videosettings
 import subprocess
 import re
 

@@ -1,8 +1,8 @@
 from PIL import ImageFont, ImageDraw, Image
 import numpy as np
-from manualreview import videosettings
+import videosettings
 from copy import deepcopy
-from manualreview.VideoTypes import videoformat, imageframe
+from VideoTypes import videoformat, imageframe
 import ast
 
 class StandardReddit(videoformat.VideoFormat):

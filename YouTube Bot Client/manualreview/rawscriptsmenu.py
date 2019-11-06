@@ -5,10 +5,10 @@ from PyQt5 import QtGui
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
-from manualreview import videoscriptcore
-from manualreview import videoeditor
-from manualreview import client
-from manualreview import publishmenu
+import videoscriptcore
+import videoeditor
+import client
+import publishmenu
 class ScriptsMenu(QMainWindow):
 
     edit_response_false = pyqtSignal()

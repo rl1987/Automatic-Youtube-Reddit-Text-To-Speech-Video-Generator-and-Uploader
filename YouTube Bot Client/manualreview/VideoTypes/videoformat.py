@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from manualreview import videosettings
+import videosettings
 from collections import namedtuple
 
 class VideoFormat(ABC):

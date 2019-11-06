@@ -5,11 +5,11 @@ from PyQt5 import QtGui
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
-from manualreview.VideoTypes import standardredditformat
-from manualreview import videoscriptcore
-from manualreview import keywordgenerator
-from manualreview import client
-from manualreview import videoeditor
+from VideoTypes import standardredditformat
+import videoscriptcore
+import keywordgenerator
+import client
+import videoeditor
 import os
 from PyQt5.QtCore import *
 from PyQt5 import QtGui
@@ -22,7 +22,7 @@ import numpy as np
 from PIL import Image
 import subprocess
 from PyQt5 import QtWidgets
-from manualreview import settings
+import settings
 
 
 currentPath = os.path.dirname(os.path.realpath(__file__))
