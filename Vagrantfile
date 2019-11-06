@@ -73,5 +73,7 @@ Vagrant.configure("2") do |config|
      echo "trustno1" | mysql -u root -p -e "GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';"
      echo "trustno1" | mysql -u root -p -e "FLUSH PRIVILEGES;"
      pip3 install mysql-connector pydub oauth2client soundfile pymediainfo moviepy Pillow numpy matplotlib praw pandas
+     nohup python3 "/home/vagrant/src/YouTube Bot Server/initserver.py" &
+     nohup python3 "/home/vagrant/src/Youtube Bot Video Generator/youtubequeue.py" &
   SHELL
 end
