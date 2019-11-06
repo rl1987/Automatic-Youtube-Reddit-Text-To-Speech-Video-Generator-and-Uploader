@@ -14,7 +14,7 @@ socket = pythonsocket.socket(pythonsocket.AF_INET, pythonsocket.SOCK_STREAM)
 def startServer():
     database.beginDataBaseConnection()
     database.initDatabase()
-    server_address = ('localhost', 10000)
+    server_address = ('0.0.0.0', 10000)
     print('Starting server on %s port %s' % server_address)
     socket.setsockopt(pythonsocket.SOL_SOCKET, pythonsocket.SO_REUSEADDR, 1)
     socket.settimeout(None)

@@ -271,9 +271,9 @@ def beginDataBaseConnection():
     connection_pool = pooling.MySQLConnectionPool(
     pool_size=32,
         pool_reset_session=True,
-      host="XXXXX",
-      user="XXXXX",
-      passwd="XXXXX"
+      host="127.0.0.1",
+      user="newuser",
+      passwd="password"
     )
     print("Started database connection")
 
