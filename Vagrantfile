@@ -65,13 +65,13 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
      apt-get update
-     apt-get install -y python3 python3-pip
+     apt-get install -y python3 python3-pip ffmpeg python3-opencv
      debconf-set-selections <<< 'mysql-server mysql-server/root_password password trustno1'
      debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password trustno1'
      apt-get -y install mysql-server
      echo "trustno1" | mysql -u root -p -e "CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';"
      echo "trustno1" | mysql -u root -p -e "GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';"
      echo "trustno1" | mysql -u root -p -e "FLUSH PRIVILEGES;"
-     pip3 install mysql-connector pydub oauth2client soundfile pymediainfo opencv-python moviepy Pillow numpy matplotlib praw
+     pip3 install mysql-connector pydub oauth2client soundfile pymediainfo moviepy Pillow numpy matplotlib praw pandas
   SHELL
 end
