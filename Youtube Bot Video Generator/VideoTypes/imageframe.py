@@ -86,7 +86,7 @@ class Frame():
 
         print(self.text)
         print(repr(self.text))
-        command = "wine /home/royalreddit/Desktop/balcon/balcon.exe -t \"%s\" -n ScanSoft Daniel_Full_22kHz -w '%s'" % (
+        command = "wine ~/src/balcon.exe -t \"%s\" -n ScanSoft Daniel_Full_22kHz -w '%s'" % (
         self.text, self.audio_path2)
 
         process = subprocess.call(command, shell=True)
